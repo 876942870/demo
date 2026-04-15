@@ -8,7 +8,7 @@ namespace demo.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching","xxx"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -18,9 +18,20 @@ namespace demo.Controllers
             _logger = logger;
         }
 
+        // 模拟一个类
+        public class WeatherForecast
+        {
+            public DateTime Date { get; set; }
+            public int TemperatureC { get; set; }
+            public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            public string? Summary { get; set; }
+        }
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            // 模拟改一个文件的一个地方
+            System.IO.File.WriteAllText("D:\\test.txt", "test");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
