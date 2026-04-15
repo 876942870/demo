@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\code\\demo\\demo\\demo.csproj": {}
+    "E:\\code\\dev\\demo\\demo.csproj": {}
   },
   "projects": {
-    "E:\\code\\demo\\demo\\demo.csproj": {
+    "E:\\code\\dev\\demo\\demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\code\\demo\\demo\\demo.csproj",
+        "projectUniqueName": "E:\\code\\dev\\demo\\demo.csproj",
         "projectName": "demo",
-        "projectPath": "E:\\code\\demo\\demo\\demo.csproj",
+        "projectPath": "E:\\code\\dev\\demo\\demo.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\code\\demo\\demo\\obj\\",
+        "outputPath": "E:\\code\\dev\\demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
