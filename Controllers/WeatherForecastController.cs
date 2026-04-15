@@ -21,6 +21,8 @@ namespace demo.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            // 模拟改一个文件的一个地方
+            System.IO.File.WriteAllText("D:\\test.txt", "test");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
