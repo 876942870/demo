@@ -19,6 +19,9 @@ if (app.Environment.IsDevelopment())
 // 正常提交流程 dev->test->main
 app.UseHttpsRedirection();
 
+// 模拟统一行修改代码
+app.UseCookiePolicy();
+
 app.UseAuthorization();
 
 app.MapControllers();
