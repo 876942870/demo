@@ -16,6 +16,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// 正常提交流程 dev->test->main
+app.UseHttpsRedirection();
+
 app.UseAuthorization();
 
 app.MapControllers();
